@@ -13,6 +13,14 @@ const routes: Routes = [
   },  {
     path: 'taps',
     loadChildren: () => import('./taps/taps.module').then( m => m.TapsPageModule)
+  },
+  {
+    path: 'account',
+    loadChildren: () => import('./account/account.module').then( m => m.AccountPageModule)
+  },
+  {
+    path: 'transactions',
+    loadChildren: () => import('./transactions/transactions.module').then( m => m.TransactionsPageModule)
   }
 
 ];
