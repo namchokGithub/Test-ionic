@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss']
 })
+
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
@@ -38,7 +39,6 @@ export class AppComponent implements OnInit {
       icon: 'settings'
     }
   ];
-  public labels = ['Namchok', 'Namchok 2', 'Namchok 3', 'Namchok 4', 'Namchok 6', 'Reminders'];
 
   constructor(
     private platform: Platform,
