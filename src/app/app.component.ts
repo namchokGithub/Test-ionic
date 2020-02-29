@@ -20,22 +20,22 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Transactions',
-      url: '/folder/Outbox',
+      url: '/transactions',
       icon: 'card'
     },
     {
       title: 'Account',
-      url: '/folder/Favorites',
+      url: '/account',
       icon: 'person'
     },
     {
       title: 'Report',
-      url: '/folder/Archived',
+      url: '/report',
       icon: 'bar-chart'
     },
     {
       title: 'Setting',
-      url: '/folder/Archived',
+      url: '/setting',
       icon: 'settings'
     }
   ];
