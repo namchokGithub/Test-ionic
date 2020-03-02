@@ -9,13 +9,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss']
 })
-
 export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
       title: 'Home',
-      url: '/folder/Inbox',
+      url: '/home',
       icon: 'home'
     },
     {
@@ -60,5 +59,9 @@ export class AppComponent implements OnInit {
     if (path !== undefined) {
       this.selectedIndex = this.appPages.findIndex(page => page.title.toLowerCase() === path.toLowerCase());
     }
+  }
+
+  callpageAdd() {
+    console.log('click');
   }
 }

@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'transactions',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -12,16 +12,16 @@ const routes: Routes = [
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
-    path: 'taps',
-    loadChildren: () => import('./taps/taps.module').then( m => m.TapsPageModule)
-  },
-  {
-    path: 'account',
-    loadChildren: () => import('./account/account.module').then( m => m.AccountPageModule)
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
     path: 'transactions',
     loadChildren: () => import('./transactions/transactions.module').then( m => m.TransactionsPageModule)
+  },
+  {
+    path: 'account',
+    loadChildren: () => import('./account/account.module').then( m => m.AccountPageModule)
   },
   {
     path: 'report',
@@ -35,7 +35,11 @@ const routes: Routes = [
     path: 'add',
     loadChildren: () => import('./add/add.module').then( m => m.AddPageModule)
   }
-
+  ,
+  // {
+  //   path: 'modal-page',
+  //   loadChildren: () => import('./modal-page/modal-p age.module').then( m => m.ModalPagePageModule)
+  // }
 ];
 
 @NgModule({
